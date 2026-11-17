@@ -3,7 +3,7 @@
 %%Text bf para negrilla , el \\ es para el salto de linea.
 %%El primer \\ hace un espacio en el texto y el 2 \\ crea otro espacio
 \textbf{Ejemplo 3}\newline
-Se plantea la construcción de un puente y se han presentado dos proyectos, el primero es un puente colgante a un costo de 850.000.000 COP, cada año habrá que darle mantenimiento a la plataforma de asfalto a un costo de 3.000.000 COP, se estima que las reparaciones serán cada vez mayores y que éstas aumentarán de precio todos los años en 2.000.000 COP y cada 5 años habrá que cambiar los cables que sostienen el puente a un costo fijo de 100.000.000 COP, el segundo proyecto es un puente en concreto a un costo de 900.000.000 COP, cada 3 años habrá que reacondicionar las bases a un costo de 25.000.000 COP, el costo anual de mantenimiento se puede considerara fijo en 5.000.000 COP. Con una tasa del 24\% determinar la mejor alternativa.
+Se plantea la construcción de un puente y se han presentado dos proyectos. El primero es un puente colgante con un costo de 850.000.000 COP. Cada año habrá que darle mantenimiento a la plataforma de asfalto, con un costo de 3.000.000 COP el primer año; se estima que las reparaciones serán cada vez mayores, de modo que este costo aumentará 2.000.000 COP cada año. Además, cada 5 años habrá que cambiar los cables que sostienen el puente, a un costo fijo de 100.000.000 COP. El segundo proyecto es un puente en concreto con un costo de 900.000.000 COP; cada 3 años habrá que reacondicionar las bases, a un costo de 25.000.000 COP, y el costo anual de mantenimiento se puede considerar fijo en 5.000.000 COP. Con una tasa del 24\% anual vencida (pav) y suponiendo una vida útil indefinida para ambos puentes, determinar la mejor alternativa.
 
 \textbf{Solución.}\\
 \begin{center}
@@ -22,7 +22,7 @@ Se plantea la construcción de un puente y se han presentado dos proyectos, el p
 		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación período focal}}   \\ \hline
 		%%%%%%%%%% FIN TITULO
 		%%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
-		\multicolumn{3}{|c|}{$pf : 0 pmv$} \\ \hline
+		\multicolumn{3}{|c|}{$pf : 0 \textit{ pav}$} \\ \hline
 		%Definimos el color de la primera fila
 		\rowcolor[HTML]{FFB183}
 		%%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
@@ -35,12 +35,13 @@ Se plantea la construcción de un puente y se han presentado dos proyectos, el p
 		\multicolumn{1}{c|}{\cellcolor[HTML]{FFB183}\textbf{Incógnitas}} \\ \hline
 		%%%%%%%%%% FIN SUBTITULO
 		%%%%%%%%%% INICIO DE MATEMÁTICAS
-        $P_A = 850{.}000{.}000\text{ COP}$ & $i = \text{24\% pav}$ & $CAUE_A =  \text{? COP}$ \\
-		$R_m =  3{.}000{.}000\text{ + 2.000.000 *n COP}$ & $n_A = \text{5 pav}$ & $CAUE_B =  \text{? COP}$ \\
-		$PR = 100{.}000{.}000\text{ COP}$ & $n_B = \text{3 pav}$ &  \\ 
-		$P_B = 900{.}000{.}000\text{ COP}$ &  & \\ 
-		$CMO = 25{.}000{.}000\text{ COP}$ &  & \\
-		$VS =  5{.}000{.}000\text{ COP}$ & & \\ \hline
+        $P_A = 850{.}000{.}000\text{ COP}$ & $i = 24\% \textit{ pav}$ & $CAUE_A = \text{? COP}$ \\
+		$R_{mA} = 3{.}000{.}000\text{ COP}$ & $n_{cables} = 5 \textit{ años}$ & $CAUE_B = \text{? COP}$ \\
+		$G = 2{.}000{.}000\text{ COP}$ & $n_{bases} = 3 \textit{ años}$ & \\
+		$PR = 100{.}000{.}000\text{ COP}$ & Vida útil indefinida & \\
+		$P_B = 900{.}000{.}000\text{ COP}$ & & \\
+		$R_{mB} = 5{.}000{.}000\text{ COP}$ & & \\
+		$CMO = 25{.}000{.}000\text{ COP}$ & & \\ \hline
 		%%%%%%%%%% FIN DE MATEMÁTICAS
 		%%%%% FIN DECLARACIÓN DE VARIABLES
 		%%%%% INICIO FLUJO DE CAJA
@@ -58,9 +59,11 @@ Se plantea la construcción de un puente y se han presentado dos proyectos, el p
 		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de fórmulas}}                                                                                    \\ \hline
 		%%%%%%%%%%% FIN TITULO
 		%%%%%%%%%%% INICIO MATEMÁTICAS
-		\multicolumn{3}{|c|}{$VP=R\frac{1-(1+i)^{-n}}{i} \text{ Valor presente serie uniforme vencida}$}\\ 
-		\multicolumn{3}{|c|}{$VF=R\frac{(1+i)^{n}-1}{i} \text{ Valor futuro serie uniforme vencida}$}\\
-		\multicolumn{3}{|c|}{$CAUE = \sum Ingresos_{anualizados} - \sum Egresos_{anualizados} \text{ CAUE expresado como una sumatoria}$}\\
+		\multicolumn{3}{|c|}{$A = P \cdot i \text{ Costo inicial anualizado con vida indefinida}$}\\
+		\multicolumn{3}{|c|}{$A_G = \frac{G}{i} \text{ Gradiente aritmético con vida indefinida}$}\\
+		\multicolumn{3}{|c|}{$A=F\frac{i}{(1+i)^{n}-1} \text{ Fondo de amortización (serie uniforme vencida)}$}\\
+		\multicolumn{3}{|c|}{$CAUE = \sum \text{Ingresos}_{\text{anualizados}} - \sum \text{Egresos}_{\text{anualizados}}$}\\
+		\multicolumn{3}{|c|}{$CAUE = \sum \text{Ingresos}_{\text{anualizados}} - \sum \text{Egresos}_{\text{anualizados}}$}\\
 		\hline                                         
 		%%%%%%%%%% FIN MATEMÁTICAS
 		%%%%%% INICIO DESARROLLO MATEMÁTICO
@@ -70,22 +73,35 @@ Se plantea la construcción de un puente y se han presentado dos proyectos, el p
 		%%%%%%%%%% FIN TITULO
 		%%%%%%%%%% INICIO MATEMÁTICAS
 		
-		Alternativa A & \multicolumn{2}{c|}{Alternativa B}\\ \hline
+				Alternativa A & \multicolumn{2}{c|}{Alternativa B}\\ \hline
 
-		\begin{tabular}[c]{@{}c@{}}Dividir los 100.000.000 COP \\ en 5 pagos anuales uniformes:\end{tabular} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Dividir los 25.000.000 COP \\ en 3 pagos anuales uniformes:\end{tabular}} \\
-		$\begin{gathered}R = 100{.}000{.}000\text{ COP}\cdot\frac{0{,}24}{1-(1+0{,}24)^{5}} \\ = 8{.}186{.}585\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R = 25{.}000{.}000\text{ COP}\cdot\frac{0{,}24}{1-(1+0{,}24)^{3}} \\ = 3{.}146{.}923\text{ COP}\end{gathered}$}\\
+		Anualizar el costo inicial (vida indefinida): & \multicolumn{2}{c|}{Anualizar el costo inicial (vida indefinida):} \\
 
-        $ $  & \multicolumn{2}{c|}{}\\
+		$A_{P_A} = 850{.}000{.}000 \cdot 0{,}24 = 204{.}000{.}000\text{ COP}$ & \multicolumn{2}{c|}{$A_{P_B} = 900{.}000{.}000 \cdot 0{,}24 = 216{.}000{.}000\text{ COP}$}\\
 
-        CAUE Alternativa A: & \multicolumn{2}{c|}{CAUE Alternativa B:} \\
+		$ $  & \multicolumn{2}{c|}{}\\
 
-        $ $  & \multicolumn{2}{c|}{}\\
+		Anualizar el gradiente de 2.000.000 por año: & \multicolumn{2}{c|}{Anualizar los 25.000.000 cada 3 años:} \\
 
-        $\begin{gathered}CAUE_{A} = -33{.}000{.}000\text{ COP} \\ - 8{.}186{.}585\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$CAUE_{B} = -5{.}000{.}000\text{ COP} - 3{.}146{.}923\text{ COP}$}\\
+		$A_{G} = \dfrac{2{.}000{.}000}{0{,}24} = 8{.}333{.}333\text{ COP}$ & \multicolumn{2}{c|}{$A_{CMO} = 25{.}000{.}000 \cdot \frac{0{,}24}{(1+0{,}24)^{3}-1} = 6{.}617{.}958\text{ COP}$}\\
 
-        $ $  & \multicolumn{2}{c|}{}\\
+		$ $  & \multicolumn{2}{c|}{}\\
 
-        $CAUE_{A} = -41{.}186{.}585\text{ COP}$ & \multicolumn{2}{c|}{$CAUE_{B} = -8{.}146{.}923\text{ COP}$}\\
+		Anualizar los 100.000.000 cada 5 años: & \multicolumn{2}{c|}{} \\
+
+		$A_{PR} = 100{.}000{.}000 \cdot \frac{0{,}24}{(1+0{,}24)^{5}-1} = 12{.}424{.}771\text{ COP}$ & \multicolumn{2}{c|}{}\\
+
+		$ $  & \multicolumn{2}{c|}{}\\
+
+		\multicolumn{3}{|c|}{CAUE alternativa A}\\
+
+		\multicolumn{3}{|c|}{$CAUE_A = -204{.}000{.}000 - 3{.}000{.}000 - 8{.}333{.}333 - 12{.}424{.}771 = -227{.}758{.}104\text{ COP}$}\\
+
+		$ $  & \multicolumn{2}{c|}{}\\
+
+		\multicolumn{3}{|c|}{CAUE alternativa B}\\
+
+		\multicolumn{3}{|c|}{$CAUE_B = -216{.}000{.}000 - 5{.}000{.}000 - 6{.}617{.}958 = -227{.}617{.}958\text{ COP}$}\\
 
 		\hline
 
@@ -95,7 +111,7 @@ Se plantea la construcción de un puente y se han presentado dos proyectos, el p
 		\rowcolor[HTML]{FFB183}
 		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}    \\ \hline
 
-		\multicolumn{3}{|c|}{La alternativa que representa menores pérdidas es la B.} \\ 
+		\multicolumn{3}{|c|}{\parbox{11cm}{\centering\strut La mejor alternativa es la B, porque representa el menor costo anual equivalente ($CAUE_B = -227{.}617{.}958\text{ COP}$ frente a $CAUE_A = -227{.}758{.}104\text{ COP}$). La diferencia es de apenas 140.146 COP al año.\strut}} \\
         \hline
 		%%%%% FIN RESPUESTA
 		
