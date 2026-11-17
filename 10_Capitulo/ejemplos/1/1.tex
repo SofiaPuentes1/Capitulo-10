@@ -31,6 +31,7 @@ Con una tasa del 2.5 nominal anual mes vencido, hallar la mejor alternativa. \\
 \begin{center}
 
 	\renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+	\small% Tamaño de letra de la tabla para que quepan las expresiones con COP
 	%Creación de la cuadricula
 	\begin{longtable}[H]{|c|c|c|}
 		%Creamos una linea horizontal
@@ -98,45 +99,42 @@ Con una tasa del 2.5 nominal anual mes vencido, hallar la mejor alternativa. \\
 		%%%%%%%%%% FIN TITULO
 		%%%%%%%%%% INICIO MATEMÁTICAS
         Alternativa A & \multicolumn{2}{c|}{Alternativa B} \\ \hline
-        
-		Pasar el costo de operacion de $R_m$ a $R_a$: & \multicolumn{2}{c|}{Pago año 12 ($R_{rep}$) en valor presente} \\
-  
-		$R_a = {5{.}000*\frac{(1+0,025)^{12}-1}{0,025} = 68{.}978 COP}$ & \multicolumn{2}{c|}{${VP=200	{.}000(1 + 0,34489)^{-12} =  5{.}712}COP$}\\
-  
-        $ $  & \multicolumn{2}{c|}{}\\
-        
-		Dividir los 100.000 en 5 pagos anuales uniformes: & \multicolumn{2}{c|} {Nuevo P}\\
-  
-		${R_1={100{.}000} * \frac{0,34489}{1-(1+0,34489)^{-5}} = 44{.}633}COP $  & \multicolumn{2}{c|}{P = $500{.}000COP + 5{.}712COP = 505{.}712COP$}\\
+
+		Pasar el costo de operación de $R_m$ a $R_a$: & \multicolumn{2}{c|}{Pago del año 12 ($R_{rep}$) en valor presente:} \\
+		$\begin{gathered}R_a = 5{.}000\text{ COP}\cdot\frac{(1+0{,}025)^{12}-1}{0{,}025} \\ = 68{.}978\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}VP = 200{.}000\text{ COP}\cdot(1+0{,}34489)^{-12} \\ = 5{.}712\text{ COP}\end{gathered}$}\\
 
         $ $  & \multicolumn{2}{c|}{}\\
-  
-		Dividir los 15.000 en 5 pagos anuales uniformes &\multicolumn{2}{c|} {dividir los 505.712 en 20 pagos anuales}\\
-  
-		$R_2={15{.}000}* \frac{0,34489}{(1+0,34489)^{5}-1} = 1{.}522COP $ & \multicolumn{2}{c|}{${R_1={505{.}712} * \frac{0,34489}{1-(1+0,34489)^{-5}} = 174{.}882 }COP$}  \\ 
+
+		\begin{tabular}[c]{@{}c@{}}Dividir los 100.000 COP \\ en 5 pagos anuales uniformes:\end{tabular} & \multicolumn{2}{c|}{Nuevo valor de $P$:}\\
+		$\begin{gathered}R_1 = 100{.}000\text{ COP}\cdot\frac{0{,}34489}{1-(1+0{,}34489)^{-5}} \\ = 44{.}633\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$P = 500{.}000\text{ COP} + 5{.}712\text{ COP} = 505{.}712\text{ COP}$}\\
 
         $ $  & \multicolumn{2}{c|}{}\\
-  
-		CAUE alternativa A &\multicolumn{2}{c|}{Cuota anual valor salvamento}\\ 
-		$CAUE_{A} = 1.522-44.633-68.978$ &\multicolumn{2}{c|}{${R_2={150{.}000}* \frac{0,34489}{(1+0,34489)^{20}-1} = 138COP }$}\\ 
+
+		\begin{tabular}[c]{@{}c@{}}Dividir los 15.000 COP \\ en 5 pagos anuales uniformes:\end{tabular} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Dividir los 505.712 COP \\ en 20 pagos anuales uniformes:\end{tabular}}\\
+		$\begin{gathered}R_2 = 15{.}000\text{ COP}\cdot\frac{0{,}34489}{(1+0{,}34489)^{5}-1} \\ = 1{.}522\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R_1 = 505{.}712\text{ COP}\cdot\frac{0{,}34489}{1-(1+0{,}34489)^{-20}} \\ = 174{.}882\text{ COP}\end{gathered}$}  \\
 
         $ $  & \multicolumn{2}{c|}{}\\
-  
-		$CAUE_{A} = -112.089 COP$ &\multicolumn{2}{c|}{Pasar el costo de operacion de $R_m$ a $R_a$}\\ 
-		&\multicolumn{2}{c|}{$R_a = {10{.}000*\frac{1,025^{12}-1}{0,025} = 137{.}956 }COP$} \\ 
+
+		CAUE alternativa A: & \multicolumn{2}{c|}{Cuota anual del valor de salvamento:}\\
+		$\begin{gathered}CAUE_{A} = 1{.}522\text{ COP}-44{.}633\text{ COP} \\ -68{.}978\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R_2 = 150{.}000\text{ COP}\cdot\frac{0{,}34489}{(1+0{,}34489)^{20}-1} \\ = 138{.}000\text{ COP}\end{gathered}$}\\
 
         $ $  & \multicolumn{2}{c|}{}\\
-  
-		& \multicolumn{2}{c|}{CAUE alternativa B} \\ 
-		&\multicolumn{2}{c|}{$CAUE_{B} = 138-174.882-137.956$}\\ 
-		&\multicolumn{2}{c|}{$CAUE_{B} = -312.700COP$} \\ \hline
+
+		$CAUE_{A} = -112{.}089\text{ COP}$ & \multicolumn{2}{c|}{Pasar el costo de operación de $R_m$ a $R_a$:}\\
+		& \multicolumn{2}{c|}{$\begin{gathered}R_a = 10{.}000\text{ COP}\cdot\frac{(1+0{,}025)^{12}-1}{0{,}025} \\ = 137{.}956\text{ COP}\end{gathered}$} \\
+
+        $ $  & \multicolumn{2}{c|}{}\\
+
+		& \multicolumn{2}{c|}{CAUE alternativa B:} \\
+		& \multicolumn{2}{c|}{$CAUE_{B} = 138\text{ COP}-174{.}882\text{ COP}-137{.}956\text{ COP}$}\\
+		& \multicolumn{2}{c|}{$CAUE_{B} = -312{.}700\text{ COP}$} \\ \hline
 		%%%%%%%%%% FIN MATEMÁTICAS
 		%%%%%% FIN DESARROLLO MATEMÁTICO
 
 		\rowcolor[HTML]{FFB183}
 		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}    \\ \hline
 
-		\multicolumn{3}{|c|}{La alternativa que representa menores perdidas es la A.} \\ \hline
+		\multicolumn{3}{|c|}{La alternativa que representa menores pérdidas es la A.} \\ \hline
 	\end{longtable}
 	%Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
 	%\newline \newline
