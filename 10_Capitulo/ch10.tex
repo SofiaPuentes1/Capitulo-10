@@ -14,7 +14,7 @@
 \section{Mapa mental}
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=4.5cm]{Mapa Mental 10.1.png}\\
+	\includegraphics[width=\textwidth]{Mapa Mental 10.1.png}\\
 	\caption{Mapa mental CAUE}
 \end{figure}
 
@@ -48,6 +48,76 @@ Donde \textit{i} corresponde a la tasa de interés y \textit{n} a los periodos a
 El Costo Anual Uniforme Equivalente (CAUE) puede ser expresado mediante la anualización de todos los costos asociados a un proyecto, sumando posteriormente estos valores. En este contexto, los ingresos se representan con un signo positivo (+), mientras que los egresos se expresan con un signo negativo (-).
 \\\\
 Es importante recordar que el CAUE tiene aplicaciones en la gestión y planeación de proyectos. Si el resultado es positivo, los ingresos son superiores a los egresos y, por tal motivo, el proyecto puede llevarse a cabo; si el resultado es negativo, los ingresos son inferiores a los egresos y, por consiguiente, el proyecto no debe llevarse a cabo. Cuando se comparan alternativas excluyentes entre sí, se escoge la de mayor CAUE; si todas representan únicamente costos (CAUE negativo), se escoge la menos negativa, es decir, la de menor costo anual.
+
+
+\subsection{Resumen de las fórmulas del capítulo}
+
+En la siguiente tabla se reúnen todas las fórmulas que se utilizan en el desarrollo de los ejemplos de este capítulo, junto con el uso que se le da a cada una. Sirve como consulta rápida antes de resolver un ejercicio.
+
+\begin{center}
+
+	\renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+	%Creación de la cuadricula
+	\begin{longtable}{|>{\centering\arraybackslash}p{3.3cm}|>{\centering\arraybackslash}p{5.6cm}|>{\centering\arraybackslash}p{4.6cm}|}
+		\hline
+		%%%%%%%%%% TITULO GENERAL
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{Fórmulas utilizadas en el capítulo 10}} \\ \hline
+		\cellcolor[HTML]{FFB183}\textbf{Concepto} &
+		\cellcolor[HTML]{FFB183}\textbf{Fórmula} &
+		\cellcolor[HTML]{FFB183}\textbf{¿Para qué se usa?} \\ \hline
+		\endhead
+
+		%%%%%%%%%% 1. CAUE
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Cálculo del CAUE}} \\ \hline
+
+		CAUE a partir del VPN &
+		$CAUE = VPN\left[\dfrac{i(1+i)^{n}}{(1+i)^{n}-1}\right]$ &
+		Convertir un valor presente neto en una cuota anual equivalente. \\ \hline
+
+		CAUE como sumatoria &
+		$CAUE = \sum Ingresos_{anualizados} - \sum Egresos_{anualizados}$ &
+		Anualizar cada ingreso y egreso por separado y sumarlos (ingresos $+$, egresos $-$). Ejemplos 1, 2 y 3. \\ \hline
+
+		%%%%%%%%%% 2. SERIES UNIFORMES
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Series uniformes vencidas}} \\ \hline
+
+		Valor presente de una serie uniforme &
+		$VP = R\left[\dfrac{1-(1+i)^{-n}}{i}\right]$ &
+		Llevar a la fecha focal 0 una serie de $n$ pagos iguales $R$. \\ \hline
+
+		Valor futuro de una serie uniforme &
+		$VF = R\left[\dfrac{(1+i)^{n}-1}{i}\right]$ &
+		Acumular una serie de pagos iguales. Ejemplo 1: pasar el costo mensual de operación $R_m$ al costo anual $R_a$. \\ \hline
+
+		Cuota uniforme a partir de un valor presente &
+		$R = P\left[\dfrac{i}{1-(1+i)^{-n}}\right]$ &
+		Repartir un costo inicial $P$ en $n$ pagos anuales iguales. Ejemplos 1 y 2. \\ \hline
+
+		Cuota uniforme a partir de un valor futuro &
+		$R = F\left[\dfrac{i}{(1+i)^{n}-1}\right]$ &
+		Repartir en $n$ pagos anuales iguales un valor que ocurre al final del periodo: valor de salvamento, reparaciones o reposiciones. Ejemplos 1, 2 y 3. \\ \hline
+
+		%%%%%%%%%% 3. PAGO UNICO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Pago único}} \\ \hline
+
+		Valor presente de un pago único &
+		$VP = VF\,(1+i)^{-n}$ &
+		Traer a la fecha focal 0 un pago aislado, como la reparación general del año 12 del Ejemplo 1. \\ \hline
+
+		%%%%%%%%%% 4. TASAS
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Equivalencia de tasas}} \\ \hline
+
+		Tasa efectiva de otro periodo a tasa anual &
+		$(1+i_{1})^{m_{1}} = (1+i_{2})^{m_{2}}$ &
+		Pasar la tasa del periodo del flujo de caja a la tasa anual. Ejemplo 1: $2{,}5\%\textit{ pmv} \equiv 34{,}489\%\textit{ pav}$, es decir $(1+0{,}025)^{12}-1$. \\ \hline
+
+		%%%%%%%%%% REFERENCIA DE VARIABLES
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{Significado de las variables}} \\ \hline
+		\multicolumn{3}{|p{13.5cm}|}{\centering
+			$i$: tasa de interés del periodo; $n$: número de periodos; $R$: pago uniforme; $P$: valor presente o costo inicial; $F$ o $VF$: valor futuro; $VP$: valor presente; $VS$: valor de salvamento; $R_m$ y $R_a$: costo mensual y costo anual; $m_{1}$ y $m_{2}$: periodos por año de $i_{1}$ e $i_{2}$.} \\ \hline
+	\end{longtable}
+\end{center}
 
 \section{Ejemplos}
 

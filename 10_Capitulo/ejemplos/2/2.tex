@@ -19,6 +19,7 @@ Con una tasa del 36\% nominal anual año vencido, determinar la mejor alternativ
 \textbf{Solución.}\\
 \begin{center}
 	\renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+	\small% Tamaño de letra de la tabla para que quepan las expresiones con COP
 	%Creación de la cuadricula
 	\begin{longtable}[H]{|c|c|c|}
 		%Creamos una linea horizontal
@@ -88,28 +89,22 @@ Con una tasa del 36\% nominal anual año vencido, determinar la mejor alternativ
 		%%%%%%%%%% INICIO MATEMÁTICAS
   
 		Alternativa A & \multicolumn{2}{c|}{Alternativa B}\\ \hline
-  
-		Dividir los 800.000 en 3 pagos anuales uniformes & \multicolumn{2}{c|}{Dividir los 600.000 en 2 pagos anuales uniformes} \\
-  
-		${R_1={800{.}000} * \frac{0,36}{1-(1+0,36)^{-3}} = 478{.}041{,}809}COP $  & \multicolumn{2}{c|}{  ${R_1={600{.}000} * \frac{0,36}{1-(1+0,36)^{-2}} = 470{.}237{,}288}COP $ }\\
 
-        $ $  & \multicolumn{2}{c|}{}\\
-        
-        Dividir los 200.000 en 3 pagos anuales uniformes & \multicolumn{2}{c|}{Dividir los 150.000 en 2 pagos anuales} \\
-  
-		${R_2={200{.}000} * \frac{0,36}{(1+0,36)^{-3}-1} = 47{.}510{,}452}COP $  & \multicolumn{2}{c|}{  ${R_2={150{.}000} * \frac{0,36}{(1+0,36)^{-2}-1} = 63{.}559{,}322}COP $}\\
-
-        $ $  & \multicolumn{2}{c|}{}\\
-        
-        $CAUE_{A} = -478{.}041,809 - 25.000 + 47{.}510,452 $ & \multicolumn{2}{c|}{
-        $CAUE_{B} = -470{.}237,288 - 30{.}000 + 63{.}559,322 $
-        }\\
+		\begin{tabular}[c]{@{}c@{}}Dividir los 800.000 COP \\ en 3 pagos anuales uniformes:\end{tabular} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Dividir los 600.000 COP \\ en 2 pagos anuales uniformes:\end{tabular}} \\
+		$\begin{gathered}R_1 = 800{.}000\text{ COP}\cdot\frac{0{,}36}{1-(1+0{,}36)^{-3}} \\ = 478{.}041{,}809\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R_1 = 600{.}000\text{ COP}\cdot\frac{0{,}36}{1-(1+0{,}36)^{-2}} \\ = 470{.}237{,}288\text{ COP}\end{gathered}$}\\
 
         $ $  & \multicolumn{2}{c|}{}\\
 
-        $CAUE_{A} = -455{.}531,357 COP$ & \multicolumn{2}{c|}{
-        $CAUE_{B} = -436{.}677,966 COP$
-        }\\
+        \begin{tabular}[c]{@{}c@{}}Dividir los 200.000 COP \\ en 3 pagos anuales uniformes:\end{tabular} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Dividir los 150.000 COP \\ en 2 pagos anuales uniformes:\end{tabular}} \\
+		$\begin{gathered}R_2 = 200{.}000\text{ COP}\cdot\frac{0{,}36}{(1+0{,}36)^{3}-1} \\ = 47{.}510{,}452\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R_2 = 150{.}000\text{ COP}\cdot\frac{0{,}36}{(1+0{,}36)^{2}-1} \\ = 63{.}559{,}322\text{ COP}\end{gathered}$}\\
+
+        $ $  & \multicolumn{2}{c|}{}\\
+
+        $\begin{gathered}CAUE_{A} = -478{.}041{,}809\text{ COP} \\ - 25{.}000\text{ COP} + 47{.}510{,}452\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}CAUE_{B} = -470{.}237{,}288\text{ COP} \\ - 30{.}000\text{ COP} + 63{.}559{,}322\text{ COP}\end{gathered}$}\\
+
+        $ $  & \multicolumn{2}{c|}{}\\
+
+        $CAUE_{A} = -455{.}531{,}357\text{ COP}$ & \multicolumn{2}{c|}{$CAUE_{B} = -436{.}677{,}966\text{ COP}$}\\
 
 		\hline
 		%%%%%%%%%% FIN MATEMÁTICAS
@@ -118,12 +113,13 @@ Con una tasa del 36\% nominal anual año vencido, determinar la mejor alternativ
 		\rowcolor[HTML]{FFB183}
 		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}    \\ \hline
 
-		\multicolumn{3}{|c|}{La alternativa que representa menores perdidad es la B.} \\ 
+		\multicolumn{3}{|c|}{La alternativa que representa menores pérdidas es la B.} \\ 
 		\hline
 	\end{longtable}
 	%Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
 	%\newline \newline
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO X %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
