@@ -9,6 +9,7 @@ Se plantea la construcción de un puente y se han presentado dos proyectos, el p
 \begin{center}
 
 	\renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+	\small% Tamaño de letra de la tabla para que quepan las expresiones con COP
 	%Creación de la cuadricula
 	\begin{longtable}{|c|c|c|}
 		%Creamos una linea horizontal
@@ -70,26 +71,21 @@ Se plantea la construcción de un puente y se han presentado dos proyectos, el p
 		%%%%%%%%%% INICIO MATEMÁTICAS
 		
 		Alternativa A & \multicolumn{2}{c|}{Alternativa B}\\ \hline
-  
-		Dividir los 100.000.000 en 5 pagos anuales uniformes & \multicolumn{2}{c|}{Dividir los 25.000.000 en 3 pagos anuales uniformes} \\
-  
-		${R={100{.}000{.}000} * \frac{0,24}{1-(1+0,24)^{5}} = 8{.}186{.}585}COP $  & \multicolumn{2}{c|}{  ${R={25{.}000{.}000} * \frac{0,24}{1-(1+0,24)^{3}} = 3{.}146{.}923}COP $ }\\
 
-        $ $  & \multicolumn{2}{c|}{}\\
-        
-        CAUE Alternativa A & \multicolumn{2}{c|}{CAUE Alternativa B} \\
-
-        $ $  & \multicolumn{2}{c|}{}\\
-        
-        $CAUE_{A} = -33{.}000{.}000 - 8{.}186{.}585$ & \multicolumn{2}{c|}{
-        $CAUE_{B} = -5{.}000{.}000 - 3{.}146{.}923$
-        }\\
+		\begin{tabular}[c]{@{}c@{}}Dividir los 100.000.000 COP \\ en 5 pagos anuales uniformes:\end{tabular} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Dividir los 25.000.000 COP \\ en 3 pagos anuales uniformes:\end{tabular}} \\
+		$\begin{gathered}R = 100{.}000{.}000\text{ COP}\cdot\frac{0{,}24}{1-(1+0{,}24)^{5}} \\ = 8{.}186{.}585\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R = 25{.}000{.}000\text{ COP}\cdot\frac{0{,}24}{1-(1+0{,}24)^{3}} \\ = 3{.}146{.}923\text{ COP}\end{gathered}$}\\
 
         $ $  & \multicolumn{2}{c|}{}\\
 
-        $CAUE_{A} = -41{.}186{.}585 COP$ & \multicolumn{2}{c|}{
-        $CAUE_{B} = -8{.}146{.}923 COP$
-        }\\
+        CAUE Alternativa A: & \multicolumn{2}{c|}{CAUE Alternativa B:} \\
+
+        $ $  & \multicolumn{2}{c|}{}\\
+
+        $\begin{gathered}CAUE_{A} = -33{.}000{.}000\text{ COP} \\ - 8{.}186{.}585\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$CAUE_{B} = -5{.}000{.}000\text{ COP} - 3{.}146{.}923\text{ COP}$}\\
+
+        $ $  & \multicolumn{2}{c|}{}\\
+
+        $CAUE_{A} = -41{.}186{.}585\text{ COP}$ & \multicolumn{2}{c|}{$CAUE_{B} = -8{.}146{.}923\text{ COP}$}\\
 
 		\hline
 
@@ -99,7 +95,7 @@ Se plantea la construcción de un puente y se han presentado dos proyectos, el p
 		\rowcolor[HTML]{FFB183}
 		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}    \\ \hline
 
-		\multicolumn{3}{|c|}{La alternativa que representa menores perdidas es la B.} \\ 
+		\multicolumn{3}{|c|}{La alternativa que representa menores pérdidas es la B.} \\ 
         \hline
 		%%%%% FIN RESPUESTA
 		
