@@ -1,4 +1,3 @@
-%% CORREGIR %%%%
 
 %%%%%%%%%% NO OLVIDAR COLOCAR ESTE COMENTARIO CON EL NUMERO DE EJERCICIO %%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%% EJERCICIO 1 %%%%%%
@@ -6,7 +5,7 @@
 %%El primer \\ hace un espacio en el  texto y el 2 \\ crea otro espacio
 \textbf{Ejemplo 1}\newline
 Se necesita adquirir un motor para la planta de acabados de una fábrica, en el mercado existen dos marcas de motores que cumplen con las especificaciones técnicas de potencia, velocidad, eficiencia, etc.
-La información que desde el punto de vista económico se proporciona, es la siguiente:\\ 
+La información que desde el punto de vista económico se proporciona es la siguiente:\\
 \begin{center}
 		\begin{tabular}{|c|c|c|c|}
 			
@@ -22,7 +21,7 @@ La información que desde el punto de vista económico se proporciona, es la sig
   \hspace{1cm}
 \end{center}
 
-Con una tasa del 2.5 nominal anual mes vencido, hallar la mejor alternativa. \\
+Con una tasa del 2,5\% periódica mensual vencida (pmv), hallar la mejor alternativa. \\
 
 \textbf{Solución.}\\
 
@@ -59,7 +58,7 @@ Con una tasa del 2.5 nominal anual mes vencido, hallar la mejor alternativa. \\
     % Valores monetarios para Alternativa A y B
     \multicolumn{1}{|c|}{$P_A = 100{.}000\text{ COP}$} & \multicolumn{1}{c|}{$n_A =  5 \textit{ años }$} & \multicolumn{1}{c|}{$CAUE_{A} =  \text{? COP}$}\\
     \multicolumn{1}{|c|}{$VS_A =  15{.}000\text{ COP}$} & \multicolumn{1}{c|}{$n_B =  20 \textit{ años }$} & \multicolumn{1}{c|}{$CAUE_{B} =  \text{? COP}$}\\
-    \multicolumn{1}{|c|}{$R_{mA} = 5{.}000\text{ COP}$} & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}\\
+    \multicolumn{1}{|c|}{$R_{mA} = 5{.}000\text{ COP}$} & \multicolumn{1}{c|}{$n_{rep} = 12 \textit{ años}$}  & \multicolumn{1}{c|}{}\\
     \multicolumn{1}{|c|}{$P_B = 500{.}000\text{ COP}$} & \multicolumn{1}{c|}{$i= 2,5\% \textit{ pmv } \equiv 34,489\% \textit{ pav}$}& \multicolumn{1}{c|}{}\\
     \multicolumn{1}{|c|}{$VS_B =  150{.}000\text{ COP}$}& \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}\\
     \multicolumn{1}{|c|}{$R_{mB} = 10{.}000\text{ COP}$}& \multicolumn{1}{c|}{}& \multicolumn{1}{c|}{}\\
@@ -88,7 +87,9 @@ Con una tasa del 2.5 nominal anual mes vencido, hallar la mejor alternativa. \\
 
 		\multicolumn{3}{|c|}{$VP=R\frac{1-(1+i)^{-n}}{i} \text{ Valor presente serie uniforme vencida}$}\\ 
 		\multicolumn{3}{|c|}{$VF=R\frac{(1+i)^{n}-1}{i} \text{ Valor futuro serie uniforme vencida}$}\\
-		\multicolumn{3}{|c|}{$CAUE = \sum Ingresos_{anualizados} - \sum Egresos_{anualizados} \text{ CAUE expresado como una sumatoria}$}\\
+		\multicolumn{3}{|c|}{$CAUE = \sum \text{Ingresos}_{\text{anualizados}} - \sum \text{Egresos}_{\text{anualizados}} \text{ CAUE como sumatoria}$}\\
+		\multicolumn{3}{|c|}{$A=P\frac{i}{1-(1+i)^{-n}} \text{ Recuperación de capital (serie uniforme vencida)}$}\\
+		\multicolumn{3}{|c|}{$A=F\frac{i}{(1+i)^{n}-1} \text{ Fondo de amortización (serie uniforme vencida)}$}\\
 		\hline
 		%%%%%%%%%% FIN MATEMÁTICAS
 		%%%%%% INICIO DESARROLLO MATEMÁTICO
@@ -97,46 +98,50 @@ Con una tasa del 2.5 nominal anual mes vencido, hallar la mejor alternativa. \\
 		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}}                                                                                      \\ \hline
 		%%%%%%%%%% FIN TITULO
 		%%%%%%%%%% INICIO MATEMÁTICAS
-        Alternativa A & \multicolumn{2}{c|}{Alternativa B} \\ \hline
-        
-		Pasar el costo de operacion de $R_m$ a $R_a$: & \multicolumn{2}{c|}{Pago año 12 ($R_{rep}$) en valor presente} \\
-  
-		$R_a = {5{.}000*\frac{(1+0,025)^{12}-1}{0,025} = 68{.}978 COP}$ & \multicolumn{2}{c|}{${VP=200	{.}000(1 + 0,34489)^{-12} =  5{.}712}COP$}\\
-  
-        $ $  & \multicolumn{2}{c|}{}\\
-        
-		Dividir los 100.000 en 5 pagos anuales uniformes: & \multicolumn{2}{c|} {Nuevo P}\\
-  
-		${R_1={100{.}000} * \frac{0,34489}{1-(1+0,34489)^{-5}} = 44{.}633}COP $  & \multicolumn{2}{c|}{P = $500{.}000COP + 5{.}712COP = 505{.}712COP$}\\
+         Alternativa A & \multicolumn{2}{c|}{Alternativa B} \\ \hline
+
+        Pasar el costo de operación de $R_m$ a $R_a$: & \multicolumn{2}{c|}{Pago del año 12 ($R_{rep}$) en valor presente} \\
+
+        $R_{aA} = 5{.}000 \cdot \frac{(1+0{,}025)^{12}-1}{0{,}025} = 68{.}978\text{ COP}$ & \multicolumn{2}{c|}{$VP = 200{.}000\,(1+0{,}34489)^{-12} = 5{.}712\text{ COP}$}\\
 
         $ $  & \multicolumn{2}{c|}{}\\
-  
-		Dividir los 15.000 en 5 pagos anuales uniformes &\multicolumn{2}{c|} {dividir los 505.712 en 20 pagos anuales}\\
-  
-		$R_2={15{.}000}* \frac{0,34489}{(1+0,34489)^{5}-1} = 1{.}522COP $ & \multicolumn{2}{c|}{${R_1={505{.}712} * \frac{0,34489}{1-(1+0,34489)^{-5}} = 174{.}882 }COP$}  \\ 
+
+        Dividir los 100.000 en 5 pagos anuales uniformes: & \multicolumn{2}{c|}{Nuevo P} \\
+
+        $R_{1A} = 100{.}000 \cdot \frac{0{,}34489}{1-(1+0{,}34489)^{-5}} = 44{.}633\text{ COP}$ & \multicolumn{2}{c|}{$P = 500{.}000\text{ COP} + 5{.}712\text{ COP} = 505{.}712\text{ COP}$}\\
 
         $ $  & \multicolumn{2}{c|}{}\\
-  
-		CAUE alternativa A &\multicolumn{2}{c|}{Cuota anual valor salvamento}\\ 
-		$CAUE_{A} = 1.522-44.633-68.978$ &\multicolumn{2}{c|}{${R_2={150{.}000}* \frac{0,34489}{(1+0,34489)^{20}-1} = 138COP }$}\\ 
+
+        Dividir los 15.000 en 5 pagos anuales uniformes: & \multicolumn{2}{c|}{Dividir los 505.712 en 20 pagos anuales} \\
+
+        $R_{2A} = 15{.}000 \cdot \frac{0{,}34489}{(1+0{,}34489)^{5}-1} = 1{.}522\text{ COP}$ & \multicolumn{2}{c|}{$R_{1B} = 505{.}712 \cdot \frac{0{,}34489}{1-(1+0{,}34489)^{-20}} = 174{.}881\text{ COP}$}  \\
 
         $ $  & \multicolumn{2}{c|}{}\\
-  
-		$CAUE_{A} = -112.089 COP$ &\multicolumn{2}{c|}{Pasar el costo de operacion de $R_m$ a $R_a$}\\ 
-		&\multicolumn{2}{c|}{$R_a = {10{.}000*\frac{1,025^{12}-1}{0,025} = 137{.}956 }COP$} \\ 
+
+        CAUE alternativa A & \multicolumn{2}{c|}{Cuota anual del valor de salvamento} \\
+
+        $CAUE_A = 1{.}522 - 44{.}633 - 68{.}978$ & \multicolumn{2}{c|}{$R_{2B} = 150{.}000 \cdot \frac{0{,}34489}{(1+0{,}34489)^{20}-1} = 138\text{ COP}$}\\
 
         $ $  & \multicolumn{2}{c|}{}\\
-  
-		& \multicolumn{2}{c|}{CAUE alternativa B} \\ 
-		&\multicolumn{2}{c|}{$CAUE_{B} = 138-174.882-137.956$}\\ 
-		&\multicolumn{2}{c|}{$CAUE_{B} = -312.700COP$} \\ \hline
+
+        $CAUE_A = -112{.}089\text{ COP}$ & \multicolumn{2}{c|}{Pasar el costo de operación de $R_m$ a $R_a$:}\\
+
+        & \multicolumn{2}{c|}{$R_{aB} = 10{.}000 \cdot \frac{(1+0{,}025)^{12}-1}{0{,}025} = 137{.}956\text{ COP}$} \\
+
+        $ $  & \multicolumn{2}{c|}{}\\
+
+        & \multicolumn{2}{c|}{CAUE alternativa B} \\
+
+        & \multicolumn{2}{c|}{$CAUE_B = 138 - 174{.}881 - 137{.}956$}\\
+
+        & \multicolumn{2}{c|}{$CAUE_B = -312{.}699\text{ COP}$} \\ \hline
 		%%%%%%%%%% FIN MATEMÁTICAS
 		%%%%%% FIN DESARROLLO MATEMÁTICO
 
 		\rowcolor[HTML]{FFB183}
 		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}    \\ \hline
 
-		\multicolumn{3}{|c|}{La alternativa que representa menores perdidas es la A.} \\ \hline
+		\multicolumn{3}{|c|}{\parbox{11cm}{\centering\strut La mejor alternativa es la A, porque representa el menor costo anual equivalente ($CAUE_A = -112{.}089\text{ COP}$ frente a $CAUE_B = -312{.}699\text{ COP}$).\strut}} \\ \hline
 	\end{longtable}
 	%Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
 	%\newline \newline
