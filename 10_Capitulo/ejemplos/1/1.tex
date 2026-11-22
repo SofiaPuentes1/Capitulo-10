@@ -1,142 +1,96 @@
 %%%%%%%%%% NO OLVIDAR COLOCAR ESTE COMENTARIO CON EL NUMERO DE EJERCICIO %%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%% EJERCICIO 1 %%%%%%
-%%Text bf para negrilla , el \\ es para el salto de linea.
-%%El primer \\ hace un espacio en el  texto y el 2 \\ crea otro espacio
-\textbf{Ejemplo 1}\newline
-Se necesita adquirir un motor para la planta de acabados de una fábrica, en el mercado existen dos marcas de motores que cumplen con las especificaciones técnicas de potencia, velocidad, eficiencia, etc.
-La información que desde el punto de vista económico se proporciona es la siguiente:\\
+\textbf{Ejemplo 1. Selección entre dos motores}\newline
+Se necesita adquirir un motor para la planta de acabados de una fábrica. Las dos alternativas cumplen las especificaciones técnicas. La información económica es la siguiente:
 \begin{center}
-		\begin{tabular}{|c|c|c|c|}
-			
-			\hline
-			\rowcolor[HTML]{FFB183}
-			  &                               & A       & B       \\ \hline
-			1. & Costo inicial (P)                 & 100.000 COP & 500.000 COP \\ \hline
-			2. & Costo mensual de operación ($R_m$)   & 5.000 COP   & 10.000 COP \\ \hline
-			3. & Años de vida útil (n)            & 5       & 20      \\ \hline
-			4. & Valor de salvamento (VS)           & 15.000 COP  & 150.000 COP \\ \hline
-			5. & Reparación general del año 12 ($R_{rep}$) & -      & 200.000 COP \\ \hline
-		\end{tabular}
-  \hspace{1cm}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\rowcolor[HTML]{FFB183}
+		\textbf{Concepto} & \textbf{Alternativa A} & \textbf{Alternativa B} \\ \hline
+		Costo inicial ($P$) & COP 100.000 & COP 500.000 \\ \hline
+		Costo de operación mensual ($R_m$) & COP 5.000 & COP 10.000 \\ \hline
+		Vida útil ($n$) & 5 años & 20 años \\ \hline
+		Valor de salvamento ($VS$) & COP 15.000 & COP 150.000 \\ \hline
+		Reparación general en el año 12 & --- & COP 200.000 \\ \hline
+	\end{tabular}
 \end{center}
 
-Con una tasa del 2,5\% periódica mensual vencida (pmv), hallar la mejor alternativa. \\
+Tasa: 2,5\% nominal anual mes vencido (namv). Se pide determinar la mejor alternativa mediante el CAUE.\\
 
 \textbf{Solución.}\\
 
-
-
 \begin{center}
-
 	\renewcommand{\arraystretch}{1.5}% Margenes de las celdas
 	\small% Tamaño de letra de la tabla para que quepan las expresiones con COP
-	%Creación de la cuadricula
 	\begin{longtable}[H]{|c|c|c|}
-		%Creamos una linea horizontal
 		\hline
-		%Definimos el color de la primera fila
 		\rowcolor[HTML]{FFB183}
 		%%%%% INICIO ASIGNACIÓN FECHA FOCAL %%%%%%%
-		%%%%%%%%%% INICIO TITULO
-		%Lo que se hace aquí es mezclar las 3 columnas en una sola
-		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación período focal}}   \\ \hline
-		%%%%%%%%%% FIN TITULO
-		%%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
-		\multicolumn{3}{|c|}{$pf : 0 pav$} \\ \hline
-		%Definimos el color de la primera fila
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación período focal}} \\ \hline
+		\multicolumn{3}{|c|}{$pf = 0\text{ pav (inicio de la evaluación)}$} \\ \hline
 		
 		%%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
-		%%%%%%%%%% INICIO TITULO
-		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}}\\ \hline                                                      %%%%%%%%%% INICIO SUBTITULO
-    \cellcolor[HTML]{FFB183}\textbf{Variables monetarias}    & 
-    \cellcolor[HTML]{FFB183}\textbf{Variables conceptuales} &
-    \cellcolor[HTML]{FFB183}\textbf{Incógnitas}  \\ \hline
-    %%%%%%%%%% FIN SUBTITULO                            
-		%%%%%%%%%% FIN TITULO
-		%%%%%%%%%% INICIO DE MATEMÁTICAS
-    
-    % Valores monetarios para Alternativa A y B
-    \multicolumn{1}{|c|}{$P_A = 100{.}000\text{ COP}$} & \multicolumn{1}{c|}{$n_A =  5 \textit{ años }$} & \multicolumn{1}{c|}{$CAUE_{A} =  \text{? COP}$}\\
-    \multicolumn{1}{|c|}{$VS_A =  15{.}000\text{ COP}$} & \multicolumn{1}{c|}{$n_B =  20 \textit{ años }$} & \multicolumn{1}{c|}{$CAUE_{B} =  \text{? COP}$}\\
-    \multicolumn{1}{|c|}{$R_{mA} = 5{.}000\text{ COP}$} & \multicolumn{1}{c|}{$n_{rep} = 12 \textit{ años}$}  & \multicolumn{1}{c|}{}\\
-    \multicolumn{1}{|c|}{$P_B = 500{.}000\text{ COP}$} & \multicolumn{1}{c|}{$i= 2,5\% \textit{ pmv } \equiv 34,489\% \textit{ pav}$}& \multicolumn{1}{c|}{}\\
-    \multicolumn{1}{|c|}{$VS_B =  150{.}000\text{ COP}$}& \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}\\
-    \multicolumn{1}{|c|}{$R_{mB} = 10{.}000\text{ COP}$}& \multicolumn{1}{c|}{}& \multicolumn{1}{c|}{}\\
-    \multicolumn{1}{|c|}{$R_{rep} = 200{.}000\text{ COP}$}& \multicolumn{1}{c|}{}& \multicolumn{1}{c|}{}\\\hline
-
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}} \\ \hline
+		\cellcolor[HTML]{FFB183}\textbf{Valores monetarios} & 
+		\cellcolor[HTML]{FFB183}\textbf{Valores no monetarios} &
+		\cellcolor[HTML]{FFB183}\textbf{Incógnitas} \\ \hline
+		
+		$P_A = \text{COP } 100.000$ & $j = 2{,}5\%\text{ namv} ; m = 12$ & $CAUE_A = \text{? COP/año}$ \\
+		$VS_A = \text{COP } 15.000$ & $i_m = 0{,}208333\%\text{ pmv}$ & $CAUE_B = \text{? COP/año}$ \\
+		$R_{mA} = \text{COP } 5.000/\text{mes}$ & $i_{\text{año}} = 2{,}528846\%\text{ pav}$ & \\
+		$P_B = \text{COP } 500.000$ & $n_A = 5\text{ pav}$ & \\
+		$VS_B = \text{COP } 150.000$ & $n_B = 20\text{ pav}$ & \\
+		$R_{mB} = \text{COP } 10.000/\text{mes}$ & & \\
+		$C_{\text{rep},B} = \text{COP } 200.000\text{ en } t = 12$ & & \\ \hline
 
 		%%%%% INICIO FLUJO DE CAJA
 		\rowcolor[HTML]{FFB183}
-		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Diagrama de flujo de caja}}                                                                                  \\ \hline
-		%Mezclamos 3 columnas y pondremos el dibujo
-		%%%%%%%%%%%%% INSERCIÓN DE LA IMAGEN
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Diagrama de flujo de caja}} \\ \hline
 		
-		\multicolumn{3}{|c|}{\includegraphics[trim=-5 -5 -5 -5, width=10.5cm, keepaspectratio]{10_Capitulo/img/ejemplos/PDFs/1/Ejemplo_1_A.pdf}}\\ \hline
-		\multicolumn{3}{|c|}{\includegraphics[trim=-5 -5 -5 -5, width=10.5cm, keepaspectratio]{10_Capitulo/img/ejemplos/PDFs/1/Ejemplo_1_B.pdf}}\\ \hline
-		%%%%%%%%%%%%% FIN INSERCIÓN DE IMAGEN
-		%%%%%FIN FLUJO DE CAJA
-
-
+		\multicolumn{3}{|c|}{\includegraphics[trim=-5 -5 -5 -5, width=12cm, keepaspectratio]{10_Capitulo/img/ejemplos/PDFs/1/Ejemplo_1_A.pdf}}\\ \hline
+		\multicolumn{3}{|c|}{\includegraphics[trim=-5 -5 -5 -5, width=12cm, keepaspectratio]{10_Capitulo/img/ejemplos/PDFs/1/Ejemplo_1_B.pdf}}\\ \hline
+		\multicolumn{3}{|p{14cm}|}{\small Los costos mensuales de operación se agrupan y acumulan al final de cada año; por eso el diagrama anual utiliza $i_{\text{año}}$ y períodos pav. La reparación de B ocurre al final del año 12.} \\ \hline
 
 		%%%%% INICIO DECLARACIÓN FORMULAS
-		%%%%%%%%%%% INICIO TITULO
 		\rowcolor[HTML]{FFB183}
-		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de fórmulas}}                                                                                    \\ \hline
-		%%%%%%%%%%% FIN TITULO
-		%%%%%%%%%%% INICIO MATEMÁTICAS
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de fórmulas}} \\ \hline
 
-		\multicolumn{3}{|c|}{$VP=R\frac{1-(1+i)^{-n}}{i} \text{ Valor presente serie uniforme vencida}$}\\ 
-		\multicolumn{3}{|c|}{$VF=R\frac{(1+i)^{n}-1}{i} \text{ Valor futuro serie uniforme vencida}$}\\
-		\multicolumn{3}{|c|}{$CAUE = \sum \text{Ingresos}_{\text{anualizados}} - \sum \text{Egresos}_{\text{anualizados}} \text{ CAUE como sumatoria}$}\\
-		\multicolumn{3}{|c|}{$A=P\frac{i}{1-(1+i)^{-n}} \text{ Recuperación de capital (serie uniforme vencida)}$}\\
-		\multicolumn{3}{|c|}{$A=F\frac{i}{(1+i)^{n}-1} \text{ Fondo de amortización (serie uniforme vencida)}$}\\
+		\multicolumn{3}{|c|}{$i_m = \dfrac{j}{12} \quad ; \quad i_{\text{año}} = (1+i_m)^{12} - 1$}\\ 
+		\multicolumn{3}{|c|}{$F_{op,\text{año}} = R_m \left[ \dfrac{(1+i_m)^{12}-1}{i_m} \right] \quad (F/A)$}\\
+		\multicolumn{3}{|c|}{$A_P = P \left[ \dfrac{i(1+i)^n}{(1+i)^n-1} \right] \quad (A/P) \quad ; \quad A_F = F \left[ \dfrac{i}{(1+i)^n-1} \right] \quad (A/F)$}\\
+		\multicolumn{3}{|c|}{$VP_{\text{rep}} = C_{\text{rep}}(1+i)^{-12} \quad ; \quad A_{\text{rep}} = VP_{\text{rep}} (A/P, i, 20)$}\\
+		\multicolumn{3}{|c|}{$CAUE = \sum \text{Ingresos}_{\text{anualizados}} - \sum \text{Egresos}_{\text{anualizados}}$}\\
 		\hline
-		%%%%%%%%%% FIN MATEMÁTICAS
+
 		%%%%%% INICIO DESARROLLO MATEMÁTICO
 		\rowcolor[HTML]{FFB183}
-		%%%%%%%%%%INICIO TITULO
-		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}}                                                                                      \\ \hline
-		%%%%%%%%%% FIN TITULO
-		%%%%%%%%%% INICIO MATEMÁTICAS
-		Alternativa A & \multicolumn{2}{c|}{Alternativa B} \\ \hline
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}} \\ \hline
 
-		Pasar el costo de operación de $R_m$ a $R_a$: & \multicolumn{2}{c|}{Pago del año 12 ($R_{rep}$) en valor presente:} \\
-		$\begin{gathered}R_{aA} = 5{.}000\text{ COP}\cdot\frac{(1+0{,}025)^{12}-1}{0{,}025} \\ = 68{.}978\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}VP = 200{.}000\text{ COP}\cdot(1+0{,}34489)^{-12} \\ = 5{.}712\text{ COP}\end{gathered}$}\\
+		\multicolumn{3}{|l|}{\textbf{Conversión de tasa:}} \\
+		\multicolumn{3}{|l|}{$i_m = \dfrac{0{,}025}{12} = 0{,}002083333 = 0{,}208333\%\text{ pmv}$} \\
+		\multicolumn{3}{|l|}{$i_{\text{año}} = (1 + 0{,}002083333)^{12} - 1 = 0{,}025288457 = 2{,}528846\%\text{ pav}$} \\ \hline
 
-		$ $  & \multicolumn{2}{c|}{}\\
+		\multicolumn{3}{|l|}{\textbf{Valor anual acumulado de los costos mensuales de operación:}} \\
+		\multicolumn{3}{|l|}{Alternativa A: $F_{op,A} = 5.000 \cdot \dfrac{(1 + 0{,}002083333)^{12} - 1}{0{,}002083333} = \text{COP } 60.692{,}30/\text{año}$} \\
+		\multicolumn{3}{|l|}{Alternativa B: $F_{op,B} = 10.000 \cdot \dfrac{(1 + 0{,}002083333)^{12} - 1}{0{,}002083333} = \text{COP } 121.384{,}59/\text{año}$} \\ \hline
 
-		\begin{tabular}[c]{@{}c@{}}Dividir los 100.000 COP \\ en 5 pagos anuales uniformes:\end{tabular} & \multicolumn{2}{c|}{Nuevo valor de $P$:}\\
-		$\begin{gathered}R_{1A} = 100{.}000\text{ COP}\cdot\frac{0{,}34489}{1-(1+0{,}34489)^{-5}} \\ = 44{.}633\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$P = 500{.}000\text{ COP} + 5{.}712\text{ COP} = 505{.}712\text{ COP}$}\\
+		\cellcolor[HTML]{FFB183}\textbf{Componente anual equivalente} & \cellcolor[HTML]{FFB183}\textbf{Alternativa A (COP/año)} & \cellcolor[HTML]{FFB183}\textbf{Alternativa B (COP/año)} \\ \hline
+		Recuperación de inversión inicial & $100.000(A/P, 2{,}528846\%, 5) = 21.542{,}56$ & $500.000(A/P, 2{,}528846\%, 20) = 32.161{,}02$ \\ \hline
+		Costo mensual acumulado al cierre & $60.692{,}30$ & $121.384{,}59$ \\ \hline
+		Reparación del año 12 & --- & $200.000(1{,}025288457)^{-12}(A/P, 2{,}528846\%, 20) = 9.533{,}16$ \\ \hline
+		Crédito por salvamento & $15.000(A/F, 2{,}528846\%, 5) = 2.852{,}06$ & $150.000(A/F, 2{,}528846\%, 20) = 5.855{,}04$ \\ \hline
 
-		$ $  & \multicolumn{2}{c|}{}\\
+		\multicolumn{3}{|l|}{\textbf{CAUE de cada alternativa:}} \\
+		\multicolumn{3}{|l|}{$CAUE_A = +2.852{,}06 - 21.542{,}56 - 60.692{,}30 = -\text{COP } 79.382{,}80/\text{año}$} \\
+		\multicolumn{3}{|l|}{$CAUE_B = +5.855{,}04 - 32.161{,}02 - 9.533{,}16 - 121.384{,}59 = -\text{COP } 157.223{,}74/\text{año}$} \\ \hline
 
-		\begin{tabular}[c]{@{}c@{}}Dividir los 15.000 COP \\ en 5 pagos anuales uniformes:\end{tabular} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Dividir los 505.712 COP \\ en 20 pagos anuales uniformes:\end{tabular}}\\
-		$\begin{gathered}R_{2A} = 15{.}000\text{ COP}\cdot\frac{0{,}34489}{(1+0{,}34489)^{5}-1} \\ = 1{.}522\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R_{1B} = 505{.}712\text{ COP}\cdot\frac{0{,}34489}{1-(1+0{,}34489)^{-20}} \\ = 174{.}881\text{ COP}\end{gathered}$}  \\
-
-		$ $  & \multicolumn{2}{c|}{}\\
-
-		CAUE alternativa A: & \multicolumn{2}{c|}{Cuota anual del valor de salvamento:}\\
-		$\begin{gathered}CAUE_{A} = 1{.}522\text{ COP}-44{.}633\text{ COP} \\ -68{.}978\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R_{2B} = 150{.}000\text{ COP}\cdot\frac{0{,}34489}{(1+0{,}34489)^{20}-1} \\ = 138\text{ COP}\end{gathered}$}\\
-
-		$ $  & \multicolumn{2}{c|}{}\\
-
-		$CAUE_{A} = -112{.}089\text{ COP}$ & \multicolumn{2}{c|}{Pasar el costo de operación de $R_m$ a $R_a$:}\\
-		& \multicolumn{2}{c|}{$\begin{gathered}R_{aB} = 10{.}000\text{ COP}\cdot\frac{(1+0{,}025)^{12}-1}{0{,}025} \\ = 137{.}956\text{ COP}\end{gathered}$} \\
-
-		$ $  & \multicolumn{2}{c|}{}\\
-
-		& \multicolumn{2}{c|}{CAUE alternativa B:} \\
-		& \multicolumn{2}{c|}{$CAUE_{B} = 138\text{ COP}-174{.}881\text{ COP}-137{.}956\text{ COP}$}\\
-		& \multicolumn{2}{c|}{$CAUE_{B} = -312{.}699\text{ COP}$} \\ \hline
-		%%%%%%%%%% FIN MATEMÁTICAS
-		%%%%%% FIN DESARROLLO MATEMÁTICO
-
+		%%%%%% INICIO RESPUESTA
 		\rowcolor[HTML]{FFB183}
-		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}    \\ \hline
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}} \\ \hline
 
-		\multicolumn{3}{|c|}{\parbox{11cm}{\centering\strut La mejor alternativa es la A, porque representa el menor costo anual equivalente ($CAUE_A = -112{.}089\text{ COP}$ frente a $CAUE_B = -312{.}699\text{ COP}$).\strut}} \\ \hline
+		\multicolumn{3}{|c|}{\parbox{14cm}{\centering\strut Se selecciona la alternativa A. Su CAUE es menos negativo y representa un costo anual equivalente menor: COP 79.382,80/año, frente a COP 157.223,74/año de la alternativa B.\strut}} \\ \hline
 	\end{longtable}
-	%Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
-	%\newline \newline
 \end{center}
-%%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO X %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,91 @@
+%%%%%%%%%% NO OLVIDAR COLOCAR ESTE COMENTARIO CON EL NUMERO DE EJERCICIO %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% EJERCICIO 2 %%%%%%
+\textbf{Ejemplo 2. Selección entre dos máquinas}\newline
+El jefe de producción de una fábrica debe decidir entre dos máquinas A y B. Sus características económicas son:
+\begin{center}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{FFB183}
+		\textbf{Máquina} & \textbf{Costo inicial $P$} & \textbf{Vida útil $n$} & \textbf{Salvamento $VS$} & \textbf{Operación anual $R$} \\ \hline
+		A & COP 800.000 & 3 años & COP 200.000 & COP 25.000 \\ \hline
+		B & COP 600.000 & 2 años & COP 150.000 & COP 30.000 \\ \hline
+	\end{tabular}
+\end{center}
+
+Tasa: 36\% nominal anual año vencido (naav). Se pide determinar la mejor alternativa.\\
+
+\textbf{Solución.}\\
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+	\small% Tamaño de letra de la tabla para que quepan las expresiones con COP
+	\begin{longtable}[H]{|c|c|c|}
+		\hline
+		\rowcolor[HTML]{FFB183}
+		%%%%% INICIO ASIGNACIÓN FECHA FOCAL %%%%%%%
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación período focal}} \\ \hline
+		\multicolumn{3}{|c|}{$pf = 0\text{ pav}$} \\ \hline
+		
+		%%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}} \\ \hline
+		\cellcolor[HTML]{FFB183}\textbf{Valores monetarios} & 
+		\cellcolor[HTML]{FFB183}\textbf{Valores no monetarios} &
+		\cellcolor[HTML]{FFB183}\textbf{Incógnitas} \\ \hline
+		
+		$P_A = \text{COP } 800.000$ & $j = 36\%\text{ naav}$ & $CAUE_A = \text{? COP/año}$ \\
+		$VS_A = \text{COP } 200.000$ & $i = 36\%\text{ pav}$ & $CAUE_B = \text{? COP/año}$ \\
+		$R_A = \text{COP } 25.000/\text{año}$ & $m = 1$ & \\
+		$P_B = \text{COP } 600.000$ & $n_A = 3\text{ pav}$ & \\
+		$VS_B = \text{COP } 150.000$ & $n_B = 2\text{ pav}$ & \\
+		$R_B = \text{COP } 30.000/\text{año}$ & & \\ \hline
+
+		%%%%% INICIO FLUJO DE CAJA
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Diagrama de flujo de caja}} \\ \hline
+		
+		\multicolumn{3}{|c|}{\includegraphics[trim=-5 -5 -5 -5, width=12cm, keepaspectratio]{10_Capitulo/img/ejemplos/PDFs/2/Ejemplo_2_A.pdf}}\\ \hline
+		\multicolumn{3}{|c|}{\includegraphics[trim=-5 -5 -5 -5, width=12cm, keepaspectratio]{10_Capitulo/img/ejemplos/PDFs/2/Ejemplo_2_B.pdf}}\\ \hline
+		\multicolumn{3}{|p{14cm}|}{\small Como la tasa es nominal anual año vencido y hay un período anual por año, $j = 36\%\text{ naav}$ equivale a $i = 36\%\text{ pav}$. No se utiliza $i_a$, porque la tasa no es anticipada.} \\ \hline
+
+		%%%%% INICIO DECLARACIÓN FORMULAS
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de fórmulas}} \\ \hline
+
+		\multicolumn{3}{|c|}{$CAUE = -P(A/P, i, n) - R + VS(A/F, i, n)$}\\ 
+		\multicolumn{3}{|c|}{$A/P = \dfrac{i(1+i)^n}{(1+i)^n - 1} \quad ; \quad A/F = \dfrac{i}{(1+i)^n - 1}$}\\
+		\hline
+
+		%%%%%% INICIO DESARROLLO MATEMÁTICO
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}} \\ \hline
+
+		\cellcolor[HTML]{FFB183}\textbf{Componente} & \cellcolor[HTML]{FFB183}\textbf{Máquina A} & \cellcolor[HTML]{FFB183}\textbf{Máquina B} \\ \hline
+		Anualización del costo inicial & $800.000 \times \dfrac{0{,}36(1{,}36)^3}{(1{,}36)^3 - 1} = 478.041{,}81$ & $600.000 \times \dfrac{0{,}36(1{,}36)^2}{(1{,}36)^2 - 1} = 470.237{,}29$ \\ \hline
+		Anualización del salvamento & $200.000 \times \dfrac{0{,}36}{(1{,}36)^3 - 1} = 47.510{,}45$ & $150.000 \times \dfrac{0{,}36}{(1{,}36)^2 - 1} = 63.559{,}32$ \\ \hline
+		Costo de operación anual & $25.000{,}00$ & $30.000{,}00$ \\ \hline
+
+		\multicolumn{3}{|l|}{\textbf{Máquina A:}} \\
+		\multicolumn{3}{|l|}{$CAUE_A = -478.041{,}81 - 25.000{,}00 + 47.510{,}45 = -\text{COP } 455.531{,}36/\text{año}$.} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Máquina B:}} \\
+		\multicolumn{3}{|l|}{$CAUE_B = -470.237{,}29 - 30.000{,}00 + 63.559{,}32 = -\text{COP } 436.677{,}97/\text{año}$.} \\ \hline
+
+		%%%%%% INICIO RESPUESTA
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}} \\ \hline
+
+		\multicolumn{3}{|c|}{\parbox{14cm}{\centering\strut Se selecciona la máquina B. Su CAUE es $-\text{COP } 436.677{,}97/\text{año}$, menos negativo que el de A ($-\text{COP } 455.531{,}36/\text{año}$). La diferencia equivale a un menor costo anual de COP 18.853,39.\strut}} \\ \hline
+	\end{longtable}
+\end{center}
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|p{14.5cm}|}
+		\hline
+		\rowcolor[HTML]{FFB183}
+		\textbf{Corrección de nomenclatura} \\ \hline
+		En la declaración original se registró ``$i_a = 36\%\text{ pav}$''. Eso es incorrecto: $i_a$ identifica una tasa periódica anticipada. Para este ejercicio corresponde escribir $i = 36\%\text{ pav}$ y, si se desea mostrar la tasa nominal, $j = 36\%\text{ naav}$. \\ \hline
+	\end{tabular}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%

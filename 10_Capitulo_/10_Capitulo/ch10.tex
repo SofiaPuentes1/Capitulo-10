@@ -1,0 +1,127 @@
+\part{Capítulo diez}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 10
+%----------------------------------------------------------------------------------------
+
+\graphicspath{ {10_Capitulo/img/ejemplos/},{10_Capitulo/img/explicacion/}, {W_Varios/2_Portada_capitulos/} }
+
+
+\chapterimage{ima2} % Chapter heading image
+
+\chapter{Costo anual uniforme equivalente}
+
+\begin{center}
+	\textbf{\Large Corrección de nomenclatura, formulación, ejemplos y criterios de decisión}
+\end{center}
+\vspace{0.3cm}
+
+\section{Mapa mental}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{10_Capitulo/img/explicacion/Mapa Mental 10.1.pdf}\\
+	\caption{Mapa mental CAUE}
+\end{figure}
+
+\section{Introducción}
+
+El Costo Anual Uniforme Equivalente (CAUE) transforma los flujos de ingresos y egresos de una alternativa en una serie anual uniforme financieramente equivalente. Así, las alternativas pueden compararse mediante un mismo indicador expresado en COP/año, aunque tengan vidas útiles diferentes, siempre que presten un servicio comparable y se utilice una tasa coherente con los períodos de evaluación.
+\\\\
+El CAUE se obtiene llevando primero los flujos a un mismo período focal ---usualmente el período 0--- y convirtiendo el valor presente neto (VPN) en una anualidad uniforme. Los costos iniciales, los costos de operación, las reparaciones, los salvamentos y cualquier otro flujo deben incluirse una sola vez y con su fecha correcta.
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|p{14cm}|}
+		\hline
+		\rowcolor[HTML]{FFB183}
+		\textbf{Convenio de signos y regla de decisión} \\ \hline
+		En esta versión se conservan los signos de flujo de caja: los ingresos y salvamentos son positivos ($+$); los egresos y costos son negativos ($-$). Por tanto, en alternativas de costo, un CAUE menos negativo representa un costo anual equivalente menor. Se selecciona el CAUE más alto (más cercano a cero), o, de forma equivalente, el menor costo anual expresado en valor positivo. \\ \hline
+	\end{tabular}
+\end{center}
+
+\noindent\textbf{Alcance:} el capítulo se organiza con el mismo esquema de la guía: período focal, variables, diagrama de flujo de caja, fórmulas, desarrollo matemático y respuesta.
+
+\newpage
+\section{Fórmulas del capítulo}
+
+En la siguiente tabla se resumen las fórmulas fundamentales empleadas en el desarrollo de los métodos de Costo Anual Uniforme Equivalente:
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{longtable}{|>{\centering\arraybackslash}p{6.2cm}|>{\arraybackslash}p{8.2cm}|}
+		\hline
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{Fórmulas del capítulo 10}} \\ \hline
+		\rowcolor[HTML]{FFB183}
+		\centering\textbf{Fórmula} & \centering\textbf{Nombre / uso} \arraybackslash \\ \hline
+		\endhead
+
+		$CAUE = VPN \left[ \dfrac{i(1+i)^n}{(1+i)^n - 1} \right]$ & Valor anual equivalente de un valor presente neto. También: $CAUE = VPN \times (A/P, i, n)$. \\ \hline
+
+		$A/P = \dfrac{i(1+i)^n}{(1+i)^n - 1}$ & Factor de recuperación de capital: transforma un valor presente $P$ en una anualidad $A$. \\ \hline
+
+		$A/F = \dfrac{i}{(1+i)^n - 1}$ & Factor de fondo de amortización: transforma un valor futuro $F$ al final de $n$ períodos en su anualidad equivalente. \\ \hline
+
+		$P/A = \dfrac{1 - (1+i)^{-n}}{i}$ & Factor de valor presente de una serie uniforme vencida. \\ \hline
+
+		$F/A = \dfrac{(1+i)^n - 1}{i}$ & Factor de valor futuro de una serie uniforme vencida. \\ \hline
+
+		$i = \dfrac{j}{m} \quad ; \quad i_{\text{año}} = (1+i_{\text{período}})^m - 1$ & Conversión de tasa nominal anual vencida $j$ a tasa periódica vencida $i$ y a tasa efectiva del año. \\ \hline
+
+		$VP_k = F_k(1+i)^{-k}$ & Traslado de un flujo único al período focal 0. \\ \hline
+	\end{longtable}
+\end{center}
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|p{14.5cm}|}
+		\hline
+		\rowcolor[HTML]{FFB183}
+		\textbf{Relación con la sumatoria de flujos} \\ \hline
+		Si cada flujo $F_k$ se registra con su signo, entonces: $VPN = \sum F_k(1+i)^{-k}$ y $CAUE = VPN \times (A/P, i, n)$. De manera equivalente, se pueden sumar los ingresos anualizados y restar los egresos anualizados. No se deben sumar montos nominales de distintos años sin trasladarlos o anualizarlos. \\ \hline
+	\end{tabular}
+\end{center}
+
+\subsection{Correcciones metodológicas aplicadas}
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{longtable}{|>{\centering\arraybackslash}p{6cm}|>{\arraybackslash}p{8.5cm}|}
+		\hline
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{Cuadro 10.1. Correcciones metodológicas aplicadas}} \\ \hline
+		\rowcolor[HTML]{FFB183}
+		\centering\textbf{Inconsistencia detectada} & \centering\textbf{Corrección aplicada} \arraybackslash \\ \hline
+		\endhead
+
+		Confusión entre tasa nominal anual y tasa periódica mensual. & Se distingue $j = 2{,}5\%\text{ namv}$ de $i = 2{,}5\%\text{ pmv}$. En el ejemplo 1 se respeta lo escrito en el enunciado: $j = 2{,}5\%\text{ namv}$; por tanto $i_m = j/12$. \\ \hline
+
+		Uso de $i_a$ para una tasa vencida. & Se reserva $i_a$ para tasa periódica anticipada. En los ejemplos con tasa vencida se utiliza $i$. \\ \hline
+
+		Anualización incompleta de los costos. & Se anualizan inversión inicial, operación, salvamento y reparaciones extraordinarias; también se explicita el período en que ocurre cada flujo. \\ \hline
+
+		Gradiente y variables del ejemplo 3 mal definidas. & Se define $R_t = R_1 + (t-1)L$, para que el primer mantenimiento sea COP 3.000.000 en el año 1. Se separan los costos de mantenimiento y reacondicionamiento. \\ \hline
+
+		Se omite la inversión inicial de los puentes en el CAUE. & Se incluyen $P_A = \text{COP } 850.000.000$ y $P_B = \text{COP } 900.000.000$ en el cálculo anual equivalente. \\ \hline
+	\end{longtable}
+\end{center}
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|p{14.5cm}|}
+		\hline
+		\rowcolor[HTML]{FFB183}
+		\textbf{Nota sobre el ejemplo 1} \\ \hline
+		La expresión $2{,}5\%$ nominal anual mes vencido (namv) significa $j = 2{,}5\%$ anual con $m = 12$ períodos al año. No equivale a $2{,}5\%$ pmv. Si se pretendía una tasa periódica mensual del $2{,}5\%$, el enunciado debe decirlo expresamente; esa interpretación produciría resultados distintos. \\ \hline
+	\end{tabular}
+\end{center}
+\end{center}
+
+\newpage
+\section{Ejemplos}
+
+\input{10_Capitulo/ejemplos/1/1}
+
+\input{10_Capitulo/ejemplos/2/2}
+
+\input{10_Capitulo/ejemplos/3/3}
