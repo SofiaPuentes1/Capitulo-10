@@ -1,0 +1,122 @@
+%%%%%%%%%%% NO OLVIDAR COLOCAR ESTE COMENTARIO CON EL NUMERO DE EJERCICIO %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% EJERCICIO 3 %%%%%%
+%%Text bf para negrilla , el \\ es para el salto de linea.
+%%El primer \\ hace un espacio en el texto y el 2 \\ crea otro espacio
+\textbf{Ejemplo 3}\newline
+Se plantea la construcción de un puente y se han presentado dos proyectos. El primero es un puente colgante con un costo de 850.000.000 COP. Cada año habrá que darle mantenimiento a la plataforma de asfalto, con un costo de 3.000.000 COP el primer año; se estima que las reparaciones serán cada vez mayores, de modo que este costo aumentará 2.000.000 COP cada año. Además, cada 5 años habrá que cambiar los cables que sostienen el puente, a un costo fijo de 100.000.000 COP. El segundo proyecto es un puente en concreto con un costo de 900.000.000 COP; cada 3 años habrá que reacondicionar las bases, a un costo de 25.000.000 COP, y el costo anual de mantenimiento se puede considerar fijo en 5.000.000 COP. Con una tasa del 24\% anual vencida (pav) y suponiendo una vida útil indefinida para ambos puentes, determinar la mejor alternativa.
+
+\textbf{Solución.}\\
+\begin{center}
+
+	\renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+	\small% Tamaño de letra de la tabla para que quepan las expresiones con COP
+	%Creación de la cuadricula
+	\begin{longtable}{|c|c|c|}
+		%Creamos una linea horizontal
+		\hline
+		%Definimos el color de la primera fila
+		\rowcolor[HTML]{FFB183}
+		%%%%% INICIO ASIGNACIÓN FECHA FOCAL %%%%%%%
+		%%%%%%%%%% INICIO TITULO
+		%Lo que se hace aquí es mezclar las 3 columnas en una sola
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación período focal}}   \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
+		\multicolumn{3}{|c|}{$pf : 0 \textit{ pav}$} \\ \hline
+		%Definimos el color de la primera fila
+		\rowcolor[HTML]{FFB183}
+		%%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
+		%%%%%%%%%% INICIO TITULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}}\\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO SUBTITULO
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{FFB183}\textbf{Variables monetarias}}    &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{FFB183}\textbf{Variables conceptuales}} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{FFB183}\textbf{Incógnitas}} \\ \hline
+		%%%%%%%%%% FIN SUBTITULO
+		%%%%%%%%%% INICIO DE MATEMÁTICAS
+        $P_A = 850{.}000{.}000\text{ COP}$ & $i = 24\% \textit{ pav}$ & $CAUE_A = \text{? COP}$ \\
+		$R_{mA} = 3{.}000{.}000\text{ COP}$ & $n_{cables} = 5 \textit{ años}$ & $CAUE_B = \text{? COP}$ \\
+		$G = 2{.}000{.}000\text{ COP}$ & $n_{bases} = 3 \textit{ años}$ & \\
+		$PR = 100{.}000{.}000\text{ COP}$ & Vida útil indefinida & \\
+		$P_B = 900{.}000{.}000\text{ COP}$ & & \\
+		$R_{mB} = 5{.}000{.}000\text{ COP}$ & & \\
+		$CMO = 25{.}000{.}000\text{ COP}$ & & \\ \hline
+		%%%%%%%%%% FIN DE MATEMÁTICAS
+		%%%%% FIN DECLARACIÓN DE VARIABLES
+		%%%%% INICIO FLUJO DE CAJA
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Diagrama de flujo de caja}}                                                                                  \\ \hline
+		%%%%%%%%%%%%% INSERCIÓN DE LA IMAGEN
+		\multicolumn{3}{|c|}{\includegraphics[trim=-5 -5 -5 -5, width=10.5cm, keepaspectratio]{10_Capitulo/img/ejemplos/PDFs/3/Ejemplo_3_A.pdf}}\\ \hline
+		\multicolumn{3}{|c|}{\includegraphics[trim=-5 -5 -5 -5, width=10.5cm, keepaspectratio]{10_Capitulo/img/ejemplos/PDFs/3/Ejemplo_3_B.pdf}}\\ \hline
+		%%%%%%%%%%%%% FIN INSERCIÓN DE IMAGEN
+		%%%%%FIN FLUJO DE CAJA
+
+		%%%%% INICIO DECLARACIÓN FORMULAS
+		%%%%%%%%%%% INICIO TITULO
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de fórmulas}}                                                                                    \\ \hline
+		%%%%%%%%%%% FIN TITULO
+		%%%%%%%%%%% INICIO MATEMÁTICAS
+		\multicolumn{3}{|c|}{$A = P \cdot i \text{ Costo inicial anualizado con vida indefinida}$}\\
+		\multicolumn{3}{|c|}{$A_G = \frac{G}{i} \text{ Gradiente aritmético con vida indefinida}$}\\
+		\multicolumn{3}{|c|}{$A=F\frac{i}{(1+i)^{n}-1} \text{ Fondo de amortización (serie uniforme vencida)}$}\\
+		\multicolumn{3}{|c|}{$CAUE = \sum \text{Ingresos}_{\text{anualizados}} - \sum \text{Egresos}_{\text{anualizados}}$}\\
+		\multicolumn{3}{|c|}{$CAUE = \sum \text{Ingresos}_{\text{anualizados}} - \sum \text{Egresos}_{\text{anualizados}}$}\\
+		\hline                                         
+		%%%%%%%%%% FIN MATEMÁTICAS
+		%%%%%% INICIO DESARROLLO MATEMÁTICO
+		\rowcolor[HTML]{FFB183}
+		%%%%%%%%%%INICIO TITULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}}\\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO MATEMÁTICAS
+		
+				Alternativa A & \multicolumn{2}{c|}{Alternativa B}\\ \hline
+
+		Anualizar el costo inicial (vida indefinida): & \multicolumn{2}{c|}{Anualizar el costo inicial (vida indefinida):} \\
+
+		$A_{P_A} = 850{.}000{.}000 \cdot 0{,}24 = 204{.}000{.}000\text{ COP}$ & \multicolumn{2}{c|}{$A_{P_B} = 900{.}000{.}000 \cdot 0{,}24 = 216{.}000{.}000\text{ COP}$}\\
+
+		$ $  & \multicolumn{2}{c|}{}\\
+
+		Anualizar el gradiente de 2.000.000 por año: & \multicolumn{2}{c|}{Anualizar los 25.000.000 cada 3 años:} \\
+
+		$A_{G} = \dfrac{2{.}000{.}000}{0{,}24} = 8{.}333{.}333\text{ COP}$ & \multicolumn{2}{c|}{$A_{CMO} = 25{.}000{.}000 \cdot \frac{0{,}24}{(1+0{,}24)^{3}-1} = 6{.}617{.}958\text{ COP}$}\\
+
+		$ $  & \multicolumn{2}{c|}{}\\
+
+		Anualizar los 100.000.000 cada 5 años: & \multicolumn{2}{c|}{} \\
+
+		$A_{PR} = 100{.}000{.}000 \cdot \frac{0{,}24}{(1+0{,}24)^{5}-1} = 12{.}424{.}771\text{ COP}$ & \multicolumn{2}{c|}{}\\
+
+		$ $  & \multicolumn{2}{c|}{}\\
+
+		\multicolumn{3}{|c|}{CAUE alternativa A}\\
+
+		\multicolumn{3}{|c|}{$CAUE_A = -204{.}000{.}000 - 3{.}000{.}000 - 8{.}333{.}333 - 12{.}424{.}771 = -227{.}758{.}104\text{ COP}$}\\
+
+		$ $  & \multicolumn{2}{c|}{}\\
+
+		\multicolumn{3}{|c|}{CAUE alternativa B}\\
+
+		\multicolumn{3}{|c|}{$CAUE_B = -216{.}000{.}000 - 5{.}000{.}000 - 6{.}617{.}958 = -227{.}617{.}958\text{ COP}$}\\
+
+		\hline
+
+		%%%%%%%%%% FIN MATEMÁTICAS
+		%%%%%% FIN DESARROLLO MATEMÁTICO
+		%%%%% INICIO RESPUESTA
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}    \\ \hline
+
+		\multicolumn{3}{|c|}{\parbox{11cm}{\centering\strut La mejor alternativa es la B, porque representa el menor costo anual equivalente ($CAUE_B = -227{.}617{.}958\text{ COP}$ frente a $CAUE_A = -227{.}758{.}104\text{ COP}$). La diferencia es de apenas 140.146 COP al año.\strut}} \\
+        \hline
+		%%%%% FIN RESPUESTA
+		
+	\end{longtable}
+	%Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
+	%\newline \newline
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO X %%%%%%%%%%%%%%%%%%%%%%%%%%%
