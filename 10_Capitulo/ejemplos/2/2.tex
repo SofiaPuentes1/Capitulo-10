@@ -78,6 +78,9 @@ Con una tasa del 36\% nominal anual año vencido, determinar la mejor alternativ
 		%%%%%%%%%%% INICIO MATEMÁTICAS
 		\multicolumn{3}{|c|}{$VP=R\frac{1-(1+i)^{-n}}{i} \text{ Valor presente serie uniforme vencida}$}\\ 
 		\multicolumn{3}{|c|}{$VF=R\frac{(1+i)^{n}-1}{i} \text{ Valor futuro serie uniforme vencida}$}\\
+		\multicolumn{3}{|c|}{$CAUE = \sum \text{Ingresos}_{\text{anualizados}} - \sum \text{Egresos}_{\text{anualizados}} \text{ CAUE como sumatoria}$}\\
+		\multicolumn{3}{|c|}{$A=P\frac{i}{1-(1+i)^{-n}} \text{ Recuperación de capital (serie uniforme vencida)}$}\\
+		\multicolumn{3}{|c|}{$A=F\frac{i}{(1+i)^{n}-1} \text{ Fondo de amortización (serie uniforme vencida)}$}\\
 		\hline
 		%%%%%%%%%% FIN MATEMÁTICAS
   
@@ -91,12 +94,12 @@ Con una tasa del 36\% nominal anual año vencido, determinar la mejor alternativ
 		Alternativa A & \multicolumn{2}{c|}{Alternativa B}\\ \hline
 
 		\begin{tabular}[c]{@{}c@{}}Dividir los 800.000 COP \\ en 3 pagos anuales uniformes:\end{tabular} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Dividir los 600.000 COP \\ en 2 pagos anuales uniformes:\end{tabular}} \\
-		$\begin{gathered}R_1 = 800{.}000\text{ COP}\cdot\frac{0{,}36}{1-(1+0{,}36)^{-3}} \\ = 478{.}041{,}809\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R_1 = 600{.}000\text{ COP}\cdot\frac{0{,}36}{1-(1+0{,}36)^{-2}} \\ = 470{.}237{,}288\text{ COP}\end{gathered}$}\\
+		$\begin{gathered}R_1 = 800{.}000\text{ COP}\mathbin{\color{red}\ast}\frac{0{,}36}{1-(1+0{,}36)^{-3}} \\ = 478{.}041{,}809\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R_1 = 600{.}000\text{ COP}\mathbin{\color{red}\ast}\frac{0{,}36}{1-(1+0{,}36)^{-2}} \\ = 470{.}237{,}288\text{ COP}\end{gathered}$}\\
 
         $ $  & \multicolumn{2}{c|}{}\\
 
         \begin{tabular}[c]{@{}c@{}}Dividir los 200.000 COP \\ en 3 pagos anuales uniformes:\end{tabular} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Dividir los 150.000 COP \\ en 2 pagos anuales uniformes:\end{tabular}} \\
-		$\begin{gathered}R_2 = 200{.}000\text{ COP}\cdot\frac{0{,}36}{(1+0{,}36)^{3}-1} \\ = 47{.}510{,}452\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R_2 = 150{.}000\text{ COP}\cdot\frac{0{,}36}{(1+0{,}36)^{2}-1} \\ = 63{.}559{,}322\text{ COP}\end{gathered}$}\\
+		$\begin{gathered}R_2 = 200{.}000\text{ COP}\mathbin{\color{red}\ast}\frac{0{,}36}{(1+0{,}36)^{3}-1} \\ = 47{.}510{,}452\text{ COP}\end{gathered}$ & \multicolumn{2}{c|}{$\begin{gathered}R_2 = 150{.}000\text{ COP}\mathbin{\color{red}\ast}\frac{0{,}36}{(1+0{,}36)^{2}-1} \\ = 63{.}559{,}322\text{ COP}\end{gathered}$}\\
 
         $ $  & \multicolumn{2}{c|}{}\\
 
@@ -120,6 +123,3 @@ Con una tasa del 36\% nominal anual año vencido, determinar la mejor alternativ
 	%\newline \newline
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO X %%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
